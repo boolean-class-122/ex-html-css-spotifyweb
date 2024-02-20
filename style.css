@@ -1,0 +1,112 @@
+/*------------------
+    RESET
+-------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*------------------
+    TYPO
+-------------------*/
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/*------------------
+    GENERAL
+-------------------*/
+.container-app {
+    height: calc(100vh - 90px);
+    display: flex;
+    background-color: lightpink;
+}
+
+/*------------------
+    HEADER
+-------------------*/
+header {
+    width: 300px;
+    flex-shrink: 0;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.logo {
+    text-align: center;
+    background-color: coral;
+}
+.logo img {
+    max-height: 50px;
+}
+
+.main-nav {
+    background-color: brown;
+}
+
+.playlist-title {
+    background-color: white;
+}
+.playlist {
+    background-color: violet;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.account {
+    background-color: gray;
+    margin-top: auto;
+}
+
+/*------------------
+    MAIN
+-------------------*/
+main {
+    background-color: yellow;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/*------------------
+    FOOTER
+-------------------*/
+footer {
+    height: 90px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    height: 6px;
+    background: gray;
+    width:50%;
+}
+.bar-inside {
+    height: 100%;
+    width: 50%;
+    background: lightgray;
+}
+
+/*------------------
+    RESPONSIVE
+-------------------*/
+@media screen and (max-width: 1100px) {}
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 70px;
+    }
+
+    .playlist-title, .playlist {
+        display: none;
+    }
+}
