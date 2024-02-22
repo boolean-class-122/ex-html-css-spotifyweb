@@ -201,6 +201,23 @@ footer {
     height: 100%;
     width: 50%;
     background: lightgray;
+    position: relative;
+}
+.bar-inside::after {
+    content: "";
+    display: block;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: inherit;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bar:hover .bar-inside {
+    background: lime;
 }
 
 /*------------------
